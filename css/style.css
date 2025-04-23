@@ -107,4 +107,103 @@
   }
 }
 
+/* ----------------- Banner ------------------ */
+.banner{
+  text-align: center;
+  margin-top: 96px;
+  background: linear-gradient(to top, rgba(79, 70, 229, 0.3), rgba(79, 70, 229, 0));
+
+}
+.title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4f46e5;
+  line-height: 20px;
+}
+.bannerTitle{
+font-size: 60px;
+font-weight: 800;
+line-height: 68px;
+width: 800px;
+text-align: center;
+margin: 0 auto;
+padding: 24px 0;
+}
+.bannerPera{
+  font-size: 18px;
+font-weight: 400;
+line-height: 160%;
+width: 800px;
+text-align: center;
+margin: 0 auto;
+color: #475569;
+}
+.bannerStore{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 48px;
+}
+.mockup-container {
+  position: relative;
+  width: fit-content;
+}
+
+.desktop-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.mockup-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/* --------------- Banner responsive--------------- */
+@media (max-width: 639px) {
+  .bannerTitle,
+  .bannerPera {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .bannerTitle {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .bannerPera {
+    font-size: 16px;
+    line-height: 160%;
+  }
+
+  .bannerStore {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 32px;
+    width: 289px;
+  }
+
+  .mockup-container {
+    margin-top: 48px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .desktop-image {
+    width: 100%;
+  }
+
+  .mockup-image {
+    width: 87px;
+    right: 36px;
+    bottom: 0px;
+  }
+}
+
 

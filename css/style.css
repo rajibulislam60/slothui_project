@@ -108,37 +108,42 @@
 }
 
 /* ----------------- Banner ------------------ */
-.banner{
+.banner {
   text-align: center;
   margin-top: 96px;
-  background: linear-gradient(to top, rgba(79, 70, 229, 0.3), rgba(79, 70, 229, 0));
-
+  background: linear-gradient(
+    to top,
+    rgba(79, 70, 229, 0.3),
+    rgba(79, 70, 229, 0)
+  );
 }
 .title {
   font-size: 14px;
   font-weight: 600;
   color: #4f46e5;
   line-height: 20px;
+  margin: 0 auto;
+  text-align: center;
 }
-.bannerTitle{
-font-size: 60px;
-font-weight: 800;
-line-height: 68px;
-width: 800px;
-text-align: center;
-margin: 0 auto;
-padding: 24px 0;
+.bannerTitle {
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 68px;
+  width: 800px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 24px 0;
 }
-.bannerPera{
+.bannerPera {
   font-size: 18px;
-font-weight: 400;
-line-height: 160%;
-width: 800px;
-text-align: center;
-margin: 0 auto;
-color: #475569;
+  font-weight: 400;
+  line-height: 160%;
+  width: 800px;
+  text-align: center;
+  margin: 0 auto;
+  color: #475569;
 }
-.bannerStore{
+.bannerStore {
   display: flex;
   gap: 8px;
   align-items: center;
@@ -164,7 +169,7 @@ color: #475569;
 }
 /* --------------- Banner responsive--------------- */
 @media (max-width: 639px) {
-  .banner{
+  .banner {
     margin-top: 64px;
   }
   .bannerTitle,
@@ -209,18 +214,20 @@ color: #475569;
   }
 }
 /* ----------------- Company logo ------------------ */
-.companylogo{
+.company {
+  background: #f8fafc;
+  padding: 64px 0;
+}
+.companylogo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 64px;
 }
-.companylogo1{
+.companylogo1 {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-top: 32px;
-  margin-bottom: 64px;
 }
 /* ------------ Company logo responsive ----------------- */
 @media (max-width: 639px) {
@@ -240,4 +247,92 @@ color: #475569;
     object-fit: contain;
   }
 }
+/* --------------- features ---------------- */
+.features {
+  padding: 96px 0;
+}
+.featuresTitle {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 44px;
+  width: 799px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 24px 0;
+}
+.featuresPera {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 160%;
+  width: 800px;
+  text-align: center;
+  margin: 0 auto;
+  color: #475569;
+}
+.featureBox {
+  width: 384px;
+  height: 214px;
+  text-align: center;
+}
+.featureBox:hover {
+  background: #f8fafc;
+}
+.featureBoxTitle {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 20px;
+}
+.featureBoxPera {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  text-align: center;
+  margin-top: 8px;
+  color: #475569;
+}
+.featuresItem {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  justify-items: center;
+}
+/* ------------- Responsive ---------------- */
+@media (max-width: 639px) {
+  .featuresTitle,
+  .featuresPera {
+    width: 100%;
+    text-align: center;
+  }
 
+  .featuresTitle {
+    font-size: 30px;
+    line-height: 38px;
+    margin-top: 20px;
+  }
+
+  .featuresPera {
+    font-size: 18px;
+    line-height: 160%;
+    margin-top: 20px;
+  }
+
+  .featuresItem {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 48px 0;
+  }
+
+  .featureBox {
+    width: 100%;
+    height: auto;
+    padding: 16px;
+  }
+  .featureBoxTitle {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+  }
+}

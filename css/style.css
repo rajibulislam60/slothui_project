@@ -255,7 +255,7 @@
   font-size: 36px;
   font-weight: 800;
   line-height: 44px;
-  width: 799px;
+  width: 800px;
   text-align: center;
   margin: 0 auto;
   padding: 24px 0;
@@ -336,3 +336,61 @@
     line-height: 24px;
   }
 }
+/* ----------- Counting ------------ */
+.counting {
+  text-align: center;
+  background: #f8fafc;
+  padding: 96px 0;
+}
+
+.countingArea {
+  width: 800px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin:  0 auto;
+  margin-top: 64px;
+}
+.countingBox{
+  text-align: center;
+}
+.countingItem {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 68px;
+  color: #4f46e5;
+  margin-bottom: 16px;
+}
+.countingItemPera{
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  text-align: center;
+  color: #475569;
+}
+.countingLine{
+  height: 108px;
+  width: 2px;
+  background: #CBD5E1;
+}
+/* -------------- Responsive --------------- */
+@media (max-width: 768px) {
+  .countingArea {
+    width: 100%;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 48px;
+    padding: 0 16px;
+  }
+
+  .countingItem {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .countingLine {
+    height: 2px;
+    width: 100%;
+  }
+}
+

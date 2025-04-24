@@ -34,4 +34,11 @@ counters.forEach((counter) => {
 
   updateCount();
 });
+// --------------------- testimonials items --------------------
+function toggleItem(){
+  const frame = document.getElementById('testimonialsFrame');
+  frame.classList.toggle('show-all');
 
+  const btn = document.querySelector('.loadMoreBtn');
+  btn.textContent = frame.classList.contains('show-all') ? "Show Less -" : "Load More +";
+}

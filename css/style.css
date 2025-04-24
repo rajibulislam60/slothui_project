@@ -164,6 +164,9 @@ color: #475569;
 }
 /* --------------- Banner responsive--------------- */
 @media (max-width: 639px) {
+  .banner{
+    margin-top: 64px;
+  }
   .bannerTitle,
   .bannerPera {
     width: 100%;
@@ -205,5 +208,36 @@ color: #475569;
     bottom: 0px;
   }
 }
+/* ----------------- Company logo ------------------ */
+.companylogo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 64px;
+}
+.companylogo1{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 64px;
+}
+/* ------------ Company logo responsive ----------------- */
+@media (max-width: 639px) {
+  .companylogo,
+  .companylogo1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    justify-items: center;
+    padding: 0 12px;
+  }
 
+  .companylogo img,
+  .companylogo1 img {
+    max-width: 80px;
+    height: auto;
+    object-fit: contain;
+  }
+}
 

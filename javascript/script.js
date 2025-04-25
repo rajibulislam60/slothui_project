@@ -42,3 +42,8 @@ function toggleItem(){
   const btn = document.querySelector('.loadMoreBtn');
   btn.textContent = frame.classList.contains('show-all') ? "Show Less -" : "Load More +";
 }
+// --------------------- FAQ Items ----------------------
+function toggleFaq(element) {
+  const item = element.parentElement;
+  item.classList.toggle('active');
+}

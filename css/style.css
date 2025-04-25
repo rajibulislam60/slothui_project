@@ -576,7 +576,6 @@
   padding: 24px;
   width: 280px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
 }
 .contactItem:hover {
   transform: scale(1.05);
@@ -598,7 +597,7 @@
 }
 /* ---------------- Responsive ----------------- */
 @media (max-width: 768px) {
-  .contact{
+  .contact {
     padding: 64px 16px;
   }
   .contactBox {
@@ -621,11 +620,11 @@
   }
 }
 /* --------------- FAQ ---------------- */
-.faq{
-  background: #F8FAFC;
+.faq {
+  background: #f8fafc;
   padding: 96px 0;
 }
-.faqFrame{
+.faqFrame {
   width: 800px;
   margin: 0 auto;
   margin-top: 48px;
@@ -637,21 +636,21 @@
   cursor: pointer;
   padding: 12px 0;
 }
-.faqQuestionArea{
+.faqQuestionArea {
   font-size: 16px;
   font-weight: 800;
   display: flex;
   gap: 8px;
   align-items: center;
 }
-.questionIcon{
+.questionIcon {
   font-size: 24px;
 }
 
 .arrow {
   font-size: 24px;
   transition: transform 0.3s ease;
-  color: #94A3B8;
+  color: #94a3b8;
 }
 
 .faqAnswer {
@@ -669,9 +668,105 @@
 .faqItem.active .arrow {
   transform: rotate(180deg);
 }
-.faqLine{
+.faqLine {
   margin: 8px 0;
   width: 100%;
   height: 1px;
-  background: #94A3B8;
+  background: #94a3b8;
+}
+/* -------------- Responsive ---------------- */
+@media (max-width: 640px) {
+  .faqFrame {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  .questionIcon,
+  .arrow {
+    font-size: 20px;
+  }
+
+  .faq {
+    padding: 64px 0;
+  }
+}
+/* ------------------- CTA --------------- */
+.cta {
+  padding: 64px 0;
+  background: #eef2ff;
+  overflow: hidden;
+}
+.ctaArea {
+  position: relative;
+}
+.ctaImage {
+  height: 905px;
+  position: absolute;
+  right: 0;
+  top: -70px;
+}
+.ctaText {
+  padding: 137px 0;
+  width: 540px;
+}
+.ctaTextTitle {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 44px;
+}
+.ctaTextPera {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 160%;
+  color: #475569;
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+.ctaBtnArea {
+  display: flex;
+  gap: 16px;
+}
+.ctaBtn {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 22px;
+  color: #4f46e5;
+  padding: 12px 20px;
+  background-color: white;
+  border: 1px solid #4f46e5;
+  border-radius: 1234px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.ctaBtn:hover {
+  color: #ffffff;
+  background-color: #4f46e5;
+}
+/* --------------- Responsive -------------- */
+@media (max-width: 768px) {
+  .cta{
+    padding-top: 64px;
+    padding-bottom: 0;
+  }
+  .ctaText {
+    padding: 48px 16px;
+    width: 100%;
+  }
+  .ctaBtnArea {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .ctaBtn {
+    width: 100%;
+  }
+
+  .ctaImage {
+    position: static;
+    height: auto;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
 }

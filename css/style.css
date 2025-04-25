@@ -446,7 +446,7 @@
   margin-top: 12px;
   color: #475569;
 }
-.frameBody{
+.frameBody {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -468,7 +468,7 @@
   .whatBox {
     width: 100%;
   }
-  .frameImg{
+  .frameImg {
     width: 343px;
     height: 343px;
     margin: 0 auto;
@@ -476,12 +476,12 @@
   }
 }
 /* ------------------- Testimonials ------------------ */
-.testimonials{
-background: #F8FAFC;
-padding: 96px 0;
+.testimonials {
+  background: #f8fafc;
+  padding: 96px 0;
 }
 .testimonialsItem {
-  border: 1px solid #E2E8F0;
+  border: 1px solid #e2e8f0;
   border-radius: 5px;
   padding: 24px;
   width: 384px;
@@ -493,31 +493,31 @@ padding: 96px 0;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
 }
 
-.testPera{
+.testPera {
   font-size: 18px;
   font-weight: 400;
   line-height: 160%;
   color: #475569;
   margin-top: 24px;
 }
-.itemPerson{
+.itemPerson {
   display: flex;
   align-items: center;
   margin-top: 24px;
   gap: 12px;
 }
-.personName{
+.personName {
   font-size: 18px;
   font-weight: bold;
   line-height: 22px;
 }
-.personDeg{
+.personDeg {
   font-size: 16px;
   font-weight: 400;
   line-height: 160%;
   color: #475569;
 }
-.testimonialsFrame{
+.testimonialsFrame {
   margin-top: 64px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -549,7 +549,7 @@ padding: 96px 0;
     display: none;
   }
 
-  .testimonialsFrame .testimonialsItem:nth-child(-n+4) {
+  .testimonialsFrame .testimonialsItem:nth-child(-n + 4) {
     display: block;
   }
 
@@ -559,5 +559,64 @@ padding: 96px 0;
 
   .testimonialsFrame.show-all .testimonialsItem {
     display: block;
+  }
+}
+/* ---------------- contact --------------------- */
+.contact {
+  padding: 64px 0;
+}
+.contactBox {
+  margin-top: 64px;
+  display: flex;
+  justify-content: space-between;
+}
+.contactItem {
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+  padding: 24px;
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+.contactItem:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  background: #e2e8f0;
+}
+.contactItemTitle {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 28px;
+  margin-top: 24px;
+}
+.contactItemPera {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 160%;
+  color: #475569;
+  margin-top: 8px;
+}
+/* ---------------- Responsive ----------------- */
+@media (max-width: 768px) {
+  .contact{
+    padding: 64px 16px;
+  }
+  .contactBox {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .contactItem {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .contactItemTitle {
+    text-align: center;
+  }
+
+  .contactItemPera {
+    text-align: center;
   }
 }
